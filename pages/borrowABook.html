@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bookie - Lend a book</title>
+        <script type="module" src="../utils/borrowABook.js"></script>
+    </head>
+    <body>
+        <form id="lendForm" novalidate>
+            <input
+                type="text"
+                name="firstName"
+                placeholder="First name"
+                required
+            /><br />
+
+            <input
+                type="text"
+                name="lastName"
+                placeholder="Last name"
+                required
+            /><br />
+
+            <select name="bookName" id="booksDropdown" required>
+                <option value="" disabled selected>
+                    --Choose a book--
+                </option></select
+            ><br />
+
+            <button type="submit">Borrow</button>
+            <div id="errorMessage" style="color: red"></div>
+        </form>
+    </body>
+</html>
